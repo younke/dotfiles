@@ -15,6 +15,7 @@ brew "neovim"
 brew "node"
 brew "tmux"
 brew "d12frosted/emacs-plus/emacs-plus", args: ["HEAD", "with-emacs-27-branch", "without-spacemacs-icon"]
+brew "vim"
 
 cask "alacritty"
 cask "docker"

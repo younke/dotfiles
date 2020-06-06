@@ -1,5 +1,6 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
-export LANG=ru_RU.UTF-8
+export LANG=en_RU.UTF-8
+export PS1="λ "
 
 alias la="ls -A"
 alias l="ls -CF"
