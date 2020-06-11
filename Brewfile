@@ -8,6 +8,7 @@ brew "bash-completion"
 brew "coreutils"
 brew "d12frosted/emacs-plus/emacs-plus", args: ["HEAD", "with-emacs-27-branch", "without-spacemacs-icon"]
 brew "fd"
+brew "git"
 brew "markdown"
 brew "mas"
 brew "neovim"
