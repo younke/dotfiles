@@ -4,17 +4,18 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "d12frosted/emacs-plus"
 
-brew "mas"
 brew "bash-completion"
 brew "coreutils"
-brew "shellcheck"
-brew "markdown"
-brew "ripgrep"
+brew "d12frosted/emacs-plus/emacs-plus", args: ["HEAD", "with-emacs-27-branch", "without-spacemacs-icon"]
 brew "fd"
+brew "markdown"
+brew "mas"
 brew "neovim"
 brew "node"
+brew "ripgrep"
+brew "shellcheck"
+brew "starship"
 brew "tmux"
-brew "d12frosted/emacs-plus/emacs-plus", args: ["HEAD", "with-emacs-27-branch", "without-spacemacs-icon"]
 brew "vim"
 
 cask "alacritty"

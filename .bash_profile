@@ -1,6 +1,5 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
-export LANG=en_RU.UTF-8
-export PS1="λ "
+export EDITOR=vim
 
 alias la="ls -A"
 alias l="ls -CF"
@@ -12,5 +11,11 @@ alias dgit="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+function xman() {
+	open x-man-page://$1 ;
+}
+
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+eval "$(starship init bash)"
 
