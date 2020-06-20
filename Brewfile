@@ -24,6 +24,7 @@ cask "docker"
 cask "font-jetbrains-mono"
 cask "google-chrome"
 cask "racket-cs"
+cask "opera"
 
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122

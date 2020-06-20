@@ -19,3 +19,7 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 
 eval "$(starship init bash)"
 
+if [ -d $HOME/.asdf ]; then
+	. $HOME/.asdf/asdf.sh
+	. $HOME/.asdf/completions/asdf.bash
+fi
