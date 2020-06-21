@@ -395,15 +395,10 @@ key_bindings:
   - { key: H,           mods: Command, command: { program: "/usr/local/bin/tmux", args: ["select-pane", "-L"] } }
   - { key: L,           mods: Command, command: { program: "/usr/local/bin/tmux", args: ["select-pane", "-R"] } }
     # Resizing
-  - { key: K,           mods: Command|Control, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-U"] } }
-  - { key: J,           mods: Command|Control, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-D"] } }
-  - { key: H,           mods: Command|Control, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-L"] } }
-  - { key: L,           mods: Command|Control, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-R"] } }
-    # Better Resizing
-  - { key: K,           mods: Command|Alt, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-U", "5"] } }
-  - { key: J,           mods: Command|Alt, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-D", "5"] } }
-  - { key: H,           mods: Command|Alt, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-L", "5"] } }
-  - { key: L,           mods: Command|Alt, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-R", "5"] } }
+  - { key: Up,          mods: Command, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-U", "2"] } }
+  - { key: Down,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-D", "2"] } }
+  - { key: Left,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-L", "2"] } }
+  - { key: Right,       mods: Command, command: { program: "/usr/local/bin/tmux", args: ["resize-pane", "-R", "2"] } }
     # Rotate window
   - { key: O,           mods: Command, command: { program: "/usr/local/bin/tmux", args: ["rotate-window"] } }
     # Kill Pane

@@ -15,6 +15,12 @@ brew "node"
 brew "shellcheck"
 brew "tmux"
 brew "vim"
+brew "gpg"
+brew "cmake"
+brew "ccls"
+brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+brew "htop"
+brew "hugo"
 
 cask "alacritty"
 cask "docker"

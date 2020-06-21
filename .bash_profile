@@ -1,5 +1,5 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
-export EDITOR=vim
+export VISUAL=nvim
 
 alias la="ls -A"
 alias l="ls -CF"
@@ -16,7 +16,7 @@ function xman() {
 }
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
-
+export PATH="/usr/local/sbin:$PATH" # brew
 
 if [ -d $HOME/.asdf ]; then
 	. $HOME/.asdf/asdf.sh
@@ -26,4 +26,3 @@ fi
 # asdf installed starship
 which starship > /dev/null 2>&1 && eval "$(starship init bash)"
 
-export PATH="$HOME/.asdf/installs/poetry/1.1.0a1/bin:$PATH"
