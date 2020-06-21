@@ -17,9 +17,13 @@ function xman() {
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
-eval "$(starship init bash)"
 
 if [ -d $HOME/.asdf ]; then
 	. $HOME/.asdf/asdf.sh
 	. $HOME/.asdf/completions/asdf.bash
 fi
+
+# asdf installed starship
+which starship > /dev/null 2>&1 && eval "$(starship init bash)"
+
+export PATH="$HOME/.asdf/installs/poetry/1.1.0a1/bin:$PATH"
