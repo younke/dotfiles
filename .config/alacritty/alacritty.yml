@@ -367,7 +367,7 @@ key_bindings:
   - { key: Semicolon,       mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["command-prompt"] } }
     # - { key: N,           mods: Command, action: SpawnNewInstance }
     #
-  - { key: T,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["new-window"] } }
+  - { key: T,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["new-window", "-c", "#{pane_current_path}"] } }
   - { key: T,           mods: Command|Shift|Control, command: { program: "/usr/local/bin/tmux", args: ["new-session"] } }
   - { key: W,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["kill-pane"] } }
   - { key: LBracket,    mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["previous-window"] } }
@@ -376,8 +376,8 @@ key_bindings:
   - { key: LBracket,    mods: Command, command: { program: "/usr/local/bin/tmux", args: ["copy-mode"] } }
   - { key: RBracket,    mods: Command, command: { program: "/usr/local/bin/tmux", args: ["paste-buffer"] } }
     #
-  - { key: V,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["split-window", "-h"] } }
-  - { key: S,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["split-window"] } }
+  - { key: V,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["split-window", "-h", "-c", "#{pane_current_path}"] } }
+  - { key: S,           mods: Command|Shift, command: { program: "/usr/local/bin/tmux", args: ["split-window", "-c", "#{pane_current_path}"] } }
     #
   - { key: Key1,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "1"] } }
   - { key: Key2,        mods: Command, command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "2"] } }
