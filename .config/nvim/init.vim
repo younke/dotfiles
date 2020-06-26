@@ -32,8 +32,11 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" Edit nvimrc
-nnoremap <Leader>,n :tabedit $MYVIMRC<CR>
-" Edit alacritty.yml
+" Edit configs
+" [,] cause open preferences
+" Edit nvimrc, [v]im
+nnoremap <Leader>,v :tabedit $MYVIMRC<CR>
+" Edit alacritty.yml [a]lacritty
 nnoremap <Leader>,a :tabedit $HOME/.config/alacritty/alacritty.yml<CR>
+nnoremap <Leader>,b :tabedit $HOME/.bash_profile<CR>
 

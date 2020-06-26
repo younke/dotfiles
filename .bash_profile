@@ -11,9 +11,8 @@ alias dgit="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-function xman() {
-	open x-man-page://$1 ;
-}
+function xman() { open x-man-page://$1; }
+function mkcd() { mkdir -p "$1" && cd "$1"; }
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH" # brew
