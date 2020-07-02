@@ -38,5 +38,6 @@ noremap <Right> <Nop>
 nnoremap <Leader>,v :tabedit $MYVIMRC<CR>
 " Edit alacritty.yml [a]lacritty
 nnoremap <Leader>,a :tabedit $HOME/.config/alacritty/alacritty.yml<CR>
+" Edit [bash] profile
 nnoremap <Leader>,b :tabedit $HOME/.bash_profile<CR>
 

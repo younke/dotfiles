@@ -25,3 +25,7 @@ fi
 # asdf installed starship
 which starship > /dev/null 2>&1 && eval "$(starship init bash)"
 
+# Nix Related
+
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
