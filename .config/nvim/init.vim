@@ -1,13 +1,6 @@
 let mapleader = "\<Space>"
 
-call plug#begin(stdpath('data') . '/plugged')
-
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-commentary' " gcc and things, popular ones
-Plug 'tpope/vim-repeat' " gcc and things, popular ones
-
-call plug#end()
+colorscheme "gruvbox"
 
 set tabstop=4
 set softtabstop=4
@@ -40,4 +33,6 @@ nnoremap <Leader>,v :tabedit $MYVIMRC<CR>
 nnoremap <Leader>,a :tabedit $HOME/.config/alacritty/alacritty.yml<CR>
 " Edit [bash] profile
 nnoremap <Leader>,b :tabedit $HOME/.bash_profile<CR>
+" Edit [nix] home
+nnoremap <Leader>,n :tabedit $HOME/.config/nixpkgs/home.nix<CR>
 
