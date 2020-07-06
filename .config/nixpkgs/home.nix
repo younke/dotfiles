@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, ... }@params:
 
 let
   relativeXDGConfigPath = ".config";
@@ -24,26 +24,12 @@ in {
     tree
   ];
 
-  programs.alacritty.enable = true;
-  programs.tmux.enable = true;
+  programs.alacritty = import ./alacritty.nix;
+  programs.tmux = import ./tmux.nix;
+  programs.neovim = (import ./neovim.nix) params;
 
   programs.bat = {
     enable = true;
     config.theme = "ansi-dark";
-  };
-
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    
-
-    plugins = with pkgs.vimPlugins; [
-      vim-nix
-      gruvbox
-      vim-surround
-      vim-unimpaired
-      vim-commentary
-      vim-repeat
-    ];
   };
 }
