@@ -92,7 +92,7 @@ in
     };
 
     settings.key_bindings = [
-  { key = "Semicolon";       mods = Command|Shift; command = { program = tmux; args = ["command-prompt"]; }; }
+  { key = "Semicolon";       mods = "Command|Shift"; command = { program = tmux; args = ["command-prompt"]; }; }
     # - { key: N,           mods: Command, action: SpawnNewInstance }
     #
   { key = "T";           mods = "Command|Shift"; command = { program = tmux; args = ["new-window" "-c" "#{pane_current_path}"]; }; }
