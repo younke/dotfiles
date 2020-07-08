@@ -87,7 +87,11 @@ in
 
       shell = {
         program = "/bin/bash";
-        args = [ "-l" "-c" "tmux attach || tmux" ];
+        args = [
+          "-l" 
+          "-c" 
+          "${tmux} || ${tmux} attach" 
+        ];
       };
     };
 

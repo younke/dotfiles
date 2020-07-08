@@ -1,4 +1,4 @@
-{ config, pkgs, ... }@params:
+{ config, lib, pkgs, ... }@params:
 
 let
   relativeXDGConfigPath = ".config";
@@ -27,6 +27,7 @@ in {
   programs.alacritty = import ./alacritty.nix;
   programs.tmux = import ./tmux.nix;
   programs.neovim = (import ./neovim.nix) params;
+  programs.bash = (import ./bash.nix) params;
 
   programs.bat = {
     enable = true;
