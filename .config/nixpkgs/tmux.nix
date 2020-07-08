@@ -1,5 +1,6 @@
 # tmux.nix
 {
+  keyMode = "vi";
   enable = true;
   baseIndex = 1;
   clock24 = true;

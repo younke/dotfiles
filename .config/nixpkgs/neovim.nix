@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 {
     enable = true;
+    viAlias = true;
     vimAlias = true;
     
+    extraConfig = builtins.readFile ./extra/init.vim;
     plugins = with pkgs.vimPlugins; [
       vim-nix
       gruvbox

@@ -12,7 +12,7 @@ set noswapfile " Disable swap files
 set hidden " Hide files in the background instead of closing 'em
 set ignorecase " Case insensitive search
 set smartcase " If first letter is Capital, then noignore
-set colorcolumn=80 
+set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=black
 set cmdheight=2 " More space for displaying messages
 set updatetime=300 " Default is 4000
@@ -25,14 +25,6 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" Edit configs
-" [,] cause open preferences
-" Edit nvimrc, [v]im
-nnoremap <Leader>,v :tabedit $MYVIMRC<CR>
-" Edit alacritty.yml [a]lacritty
-nnoremap <Leader>,a :tabedit $HOME/.config/alacritty/alacritty.yml<CR>
-" Edit [bash] profile
-nnoremap <Leader>,b :tabedit $HOME/.bash_profile<CR>
-" Edit [nix] home
-nnoremap <Leader>,n :tabedit $HOME/.config/nixpkgs/home.nix<CR>
+" Edit all the things
+nnoremap <Leader>, :tabedit $HOME/.config/nixpkgs<CR>
 
