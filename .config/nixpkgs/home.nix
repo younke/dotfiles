@@ -28,6 +28,7 @@ in {
   programs.tmux = import ./tmux.nix;
   programs.neovim = (import ./neovim.nix) params;
   programs.bash = (import ./bash.nix) params;
+  programs.starship = (import ./starship.nix) params;
 
   programs.bat = {
     enable = true;
