@@ -6,12 +6,17 @@
     vimAlias = true;
     
     extraConfig = builtins.readFile ./extra/init.vim;
+
     plugins = with pkgs.vimPlugins; [
       vim-nix
       gruvbox
+      jellybeans-vim
+
+      vim-airline
+      vim-airline-themes
       vim-surround
-      vim-unimpaired
-      vim-commentary
       vim-repeat
+      vim-commentary
+      vim-unimpaired
     ];
 }

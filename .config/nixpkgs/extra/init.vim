@@ -1,7 +1,9 @@
-let mapleader = "\<Space>"
+let mapleader = " "
+let maplocalleader = "\\"
 
-colorscheme "gruvbox"
+colorscheme jellybeans
 
+set clipboard=unnamed
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -27,4 +29,7 @@ noremap <Right> <Nop>
 
 " Edit all the things
 nnoremap <Leader>, :tabedit $HOME/.config/nixpkgs<CR>
+
+let g:airline_theme='jellybeans'
+let g:airline_powerline_fonts=1
 
