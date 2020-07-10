@@ -1,5 +1,6 @@
 # alacritty.nix
 let
+  colorSchemes = import ./alacritty_color_schemes.nix;
   font = { 
     normal = { 
       family = "JetBrains Mono"; 
@@ -13,40 +14,7 @@ let
     bold_italic = { 
       family = "JetBrains Mono"; 
     };
-    size = 14;
-  };
-  colors = { 
-    primary = {
-      background = "#292C3E";
-      foreground = "#EBEBEB";
-    };
-
-    cursor = {
-      # text = "#FF261E";
-      cursor = "#FF261E";
-    };
-
-    normal = {
-      black = "#0d0d0d";
-      red = "#FF301B";
-      green = "#A0E521";
-      yellow = "#FFC620";
-      blue = "#1BA6FA";
-      magenta = "#8763B8";
-      cyan = "#21DEEF";
-      white = "#EBEBEB";
-    };
-
-    bright = {
-      black = "#6D7070";
-      red = "#FF4352";
-      green = "#B8E466";
-      yellow = "#FFD750";
-      blue = "#1BA6FA";
-      magenta = "#A578EA";
-      cyan = "#73FBF1";
-      white = "#FEFEF8";
-    };
+    size = 15;
   };
   tmux = "/Users/younke/.nix-profile/bin/tmux";
 in
@@ -79,7 +47,8 @@ in
       };
 
       inherit font;
-      inherit colors;
+
+      colors = colorSchemes.ayu_dark;
 
       cursor = {
         unfocused_hollow = false;
