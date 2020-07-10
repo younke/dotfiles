@@ -33,3 +33,6 @@ nnoremap <Leader>, :tabedit $HOME/.config/nixpkgs<CR>
 let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts=1
 
+" nvim-colorizer
+" lua require'colorizer'.setup()
+
