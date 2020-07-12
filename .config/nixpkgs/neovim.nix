@@ -15,6 +15,7 @@ in
 
 {
     enable = true;
+    withNodeJs = true;
     viAlias = true;
     vimAlias = true;
     
@@ -33,5 +34,14 @@ in
       vim-unimpaired
 
       # nvim-colorizer
+
+      coc-nvim
+
+      # ruby
+      vim-ruby
+      coc-solargraph
+
+      # swift
+      swift-vim
     ];
 }
