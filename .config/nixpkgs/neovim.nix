@@ -11,6 +11,16 @@ let
     };
   };
 
+  vim-racket = pkgs.vimUtils.buildVimPlugin {
+    name = "nvim-colorizer";
+    src = pkgs.fetchFromGitHub {
+      owner = "wlangstroth";
+      repo = "vim-racket";
+      rev = "4dc9840cdcddf4740553c920f56435b0e016abb0";
+      sha256 = "19ah9g8qi2gy1kfg7nh1cdjl7hyxk3pqd28in7jh5w760356zahg";
+    };
+  };
+
 in
 
 {
@@ -41,7 +51,10 @@ in
       vim-ruby
       coc-solargraph
 
-      # swift
+      #swift
       swift-vim
+
+      # racket
+      vim-racket
     ];
 }
