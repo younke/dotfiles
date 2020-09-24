@@ -1,4 +1,7 @@
 # alacritty.nix
+
+{ config, ... }:
+
 let
   colorSchemes = import ./alacritty_color_schemes.nix;
   font = { 
@@ -16,7 +19,7 @@ let
     };
     size = 15;
   };
-  tmux = "/Users/younke/.nix-profile/bin/tmux";
+  tmux = "${config.home.homeDirectory}/.nix-profile/bin/tmux";
 in
   { 
     enable = true;
