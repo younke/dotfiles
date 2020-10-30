@@ -24,4 +24,5 @@ in
 
   profileExtra = builtins.readFile ./extra/profile.bash;
   initExtra = builtins.readFile ./extra/init.bash;
+  bashrcExtra = builtins.readFile ./extra/bashrc.bash;
 }
