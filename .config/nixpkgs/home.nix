@@ -23,10 +23,7 @@ in
       fzf
       ripgrep
       tree
-
       comma
-
-      rubyPackages.rspec # ruby rspec
       solargraph # ruby language server
       ccls # cpp language server
     ];
