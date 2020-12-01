@@ -18,7 +18,6 @@ in
 
     home.packages = with pkgs; [ 
       htop
-      ctags
       jq
       fzf
       ripgrep
@@ -26,6 +25,7 @@ in
       comma
       solargraph # ruby language server
       ccls # cpp language server
+      universal-ctags
     ];
 
     programs.alacritty = (import ./alacritty.nix) params;
