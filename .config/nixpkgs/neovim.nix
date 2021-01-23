@@ -63,6 +63,7 @@ in
 
       # ruby
       vim-ruby
+      vim-rails
       coc-solargraph
       vim-rspec
 
