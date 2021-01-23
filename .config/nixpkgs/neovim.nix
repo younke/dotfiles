@@ -41,6 +41,7 @@ in
     
     extraConfig = builtins.readFile ./extra/init.vim;
 
+
     plugins = with pkgs.vimPlugins; [
       vim-nix
       gruvbox

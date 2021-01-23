@@ -26,11 +26,14 @@ in
       solargraph # ruby language server
       ccls # cpp language server
       universal-ctags
+      nixfmt
     ];
 
     programs.alacritty = (import ./alacritty.nix) params;
     programs.tmux = import ./tmux.nix;
     programs.neovim = (import ./neovim.nix) params;
+    # settings for coc-nvim
+    home.file.".config/nvim/coc-settings.json".source = ./extra/coc-settings.json;
     programs.bash = (import ./bash.nix) params;
     programs.starship = (import ./starship.nix) params;
     programs.emacs = (import ./emacs.nix) params;
